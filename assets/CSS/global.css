@@ -1,0 +1,10 @@
+:root{
+    --font-color: #2C3341;
+    --light-font-color: #7D8590;
+    --p-font-color: #89909A;
+    font-family: "Inter",Arial, sans-serif;
+    font-optical-sizing: auto;
+    box-sizing: border-box;
+    width: 100vw;
+
+}

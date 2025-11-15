@@ -1,0 +1,11 @@
+
+
+._container{
+    width: 28.125rem;
+    height: 39rem;
+    margin: .8125rem auto;
+    /* border: 1px solid; */
+    border-radius: .5rem;
+    box-shadow: .9375rem .9375rem .9375rem rgba(0, 0, 0, 0.1), -.625rem 0px .3125rem rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
