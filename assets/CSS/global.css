@@ -1,10 +1,13 @@
 :root{
-    --font-color: #2C3341;
-    --light-font-color: #7D8590;
-    --p-font-color: #89909A;
-    font-family: "Inter",Arial, sans-serif;
+    --font-color: #101828;
+    --main-font-color: #4a5565;
+    --base-font-color: #1E293B;
+    --blue-font-color: #155dfc;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Inter",Arial, sans-serif;
     font-optical-sizing: auto;
     box-sizing: border-box;
     width: 100vw;
 
 }
+
+/* button color gradient one F6BC00 to 5A4D1B */
