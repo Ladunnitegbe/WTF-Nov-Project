@@ -1,7 +1,7 @@
 @import url('global.css');
 
 ._container{
-    height: 38.625rem;   /* login 618px */
+    height: 45.75rem;   /* login 618px */
 }
 
 ._container__form___buttons button a{
@@ -11,6 +11,4 @@
 ._container__form___buttons button{
 background-color: #ffffff;
 }
-
-
 

@@ -3,6 +3,7 @@
     --main-font-color: #4a5565;
     --base-font-color: #1E293B;
     --blue-font-color: #155dfc;
+    --background-color: #FFFFFFCC;
     font-family: ui-sans-serif, system-ui, sans-serif, "Inter",Arial, sans-serif;
     font-optical-sizing: auto;
     box-sizing: border-box;
@@ -10,4 +11,89 @@
 
 }
 
+body{
+    background-image: url(/WTF-Nov-Project/assets/images/main\ background.svg);
+}
+
+._container{
+    width: 28rem;
+   
+    margin: 1rem auto;
+    /* border: 1px solid; */
+    border-radius: .5rem;
+    box-shadow: .9375rem .9375rem .9375rem .625rem rgba(0, 0, 0, 0.1), -.9375rem 0px .625rem rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+._container__header{
+    text-align: center;
+    padding-top: 2.5rem;
+    height: 14.125rem;
+    width: 100%;
+}
+
+._container__header h1{
+    font-weight: 700;
+    font-size: 1.875rem;
+    margin-top: .875rem;
+    color: var(--font-color);
+}
+
+._container__header h3{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--main-font-color);
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+._container__form{
+    margin-top: 1.5rem;
+    width: 100%;
+    height: 30.125rem;
+
+}
+
+._container__form form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0rem 1.5rem 4rem 1.5rem;
+    gap: 1.5rem;
+
+}
+
+._container__form___buttons{
+    display: flex;
+    color: var(--base-font-color);
+    width: 25rem;
+    height: 2.25rem;
+    padding: .3125rem 0.25rem .1875rem 0.25rem;
+    justify-content: center;
+    border-radius: .75rem;
+    background-color: #f3f4f6;
+    
+    
+}
+
+._container__form___buttons button{
+    border: none;
+    width: 12.25rem;
+    height: 1.8125rem;
+    border-radius: .5rem;
+    justify-content: center;
+    align-items: center;
+    gap: .375rem;
+    
+    color: var(--base-font-color);
+    font-weight: 500;
+    font-size: .875rem;
+}
+
+
+
+._container__form___buttons button a{
+    text-decoration: none;
+    
+}
 /* button color gradient one F6BC00 to 5A4D1B */
