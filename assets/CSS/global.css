@@ -17,242 +17,6 @@ body{
     background-image: url(/WTF-Nov-Project/assets/images/main\ background.svg);
 }
 
-._container{
-    width: 28rem;
-   
-    margin: 1rem auto;
-    /* border: 1px solid; */
-    border-radius: .5rem;
-    box-shadow: .9375rem .9375rem .9375rem .625rem rgba(0, 0, 0, 0.1), -.9375rem 0px .625rem rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
-}
-
-._container__header{
-    text-align: center;
-    padding-top: 2.5rem;
-    height: 14.125rem;
-    width: 100%;
-}
-
-._container__header h1{
-    font-weight: 700;
-    font-size: 1.875rem;
-    margin-top: .875rem;
-    color: var(--font-color);
-}
-
-._container__header h3{
-    font-size: 1rem;
-    font-weight: 400;
-    color: var(--main-font-color);
-    margin-top: .5rem;
-    margin-bottom: 1.5rem;
-}
-
-._container__form{
-    margin: 1.5rem 1.5rem 4rem 1.5rem;
-    width: 25rem;
-    height: 30.125rem;
-
-}
-
-._container__form form{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0rem 1.5rem 4rem 1.5rem;
-    /* gap: 1.5rem; */
-
-}
-
-._container__form___buttons{
-    display: flex;
-    color: var(--base-font-color);
-    width: 100%;
-    height: 2.25rem;
-    /* margin: 1.5rem 1.5rem 0rem 1.5rem; */
-    /* padding: .3125rem 0.25rem .1875rem 0.25rem; */
-    justify-content: base;
-    align-content: center;
-    border-radius: .75rem;
-    background-color: #f3f4f6;
-    gap: .75rem;
-    
-    
-}
-
-._container__form___buttons____button{
-    border: none;
-    width: 12.25rem;
-    height: 1.8125rem;
-    border-radius: .5rem;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    color: var(--base-font-color);
-    font-weight: 500;
-    font-size: .875rem;
-    gap: .375rem;
-    margin: .3125rem 0.25rem .1875rem 0.25rem;
-    
-}
-
-#login{
-    margin: .3125rem 0.25rem .1875rem 0.25rem;
-    background-color: #f3f4f6;
-    border-radius: .5rem;
-}
-
-#signup{
-    margin: .3125rem 0.25rem .1875rem 0.25rem;
-    background-color: #ffffff;
-    border-radius: .5rem;
-    box-shadow: 0px .125rem .25rem rgba(10, 15, 26, 0.05);
-}
-
-/* ._container__form___buttons____button :active{
-    margin: .3125rem 0.25rem .1875rem 0.25rem;
-    background-color: #ffffff;
-    border-radius: .5rem;
-} */
-
-
-._container__form___buttons____button a{
-    text-decoration: none;
-    color: var(--base-font-color);
-}
-
-._container__form___input_label{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: .5rem;
-    position: relative;
-    margin-bottom: .875rem;
-}
-
-._container__form___input_label label{
-    height: .875rem;
-    color: var(--form-title-font-color);
-    font-size: .875rem;
-    font-weight: 500;
-    margin-bottom: .5rem;
-}
-
-._container_form__form_entry{
-    margin-top: 2.1875rem;
-}
-
-._container__form___input_label input{
-    width: 23.75rem ;
-    height: 3rem;
-    border: 2px solid #f3f4f6;
-    border-radius: .75rem;
-    margin: 0 auto;
-    padding-left: 3rem;
-    font-size: .875rem;
-    font-weight: 400;
-    color: var(--base-font-color);
-    display: flex;
-}
-
-._container__form___input_label img{
-    position: absolute;
-   left: .75rem;
-    top: 2.9rem;
-    width: 1.25rem;
-    height: 1.25rem;
-    cursor: pointer;
-}
-
-#password_paragraph{
-    margin-top: .5rem;
-    margin-bottom: 0rem;
-    width: 100%;
-    height: 1rem;
-    font-size: .75rem;
-    color: var(--footer-font-color);
-}
-
-._container__form___big_buttons{
-    width: 100%;
-    height: 3.5rem;
-    display: flex;
-    justify-content: space-between;
-    /* margin-top: 1.25rem; */
-    gap: .75rem;
-}
-
-._container__form___big_buttons button{
-    width: 12.25rem;
-    height: 3rem;
-    border: none;
-    border-radius: .75rem;
-    font-size: .875rem;
-    font-weight: 500;
-   color: #000000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: .5rem;
-    cursor: pointer;
-    margin-top: .5rem;
-}
-
-._container__form___big_buttons button:hover{
-    color: #ffffff;
-}
-
-/* ._container__form___big_buttons button svg{
-    /* filter: brightness(0) invert(1); */
-
-
- 
-   
-
-#gold_button{
- background: linear-gradient(to right,#fcc500, #F1B200);
-}
-
-#gold_button:hover{
-    background: linear-gradient(to right,#EEAE00,#D28900);
-    color: #000000;
-}
-
-footer{
-    margin-top: 0rem;
-}
-
-#terms{
-    font-size: .75rem;
-    color: var(--footer-font-color);
-    text-align: start;
-    
-    padding: 0;
-    height: 1rem;
-    margin: 1.5rem 0 0 0;
-}
-
-#terms a{
-    text-decoration: none;
-    color: var(--blue-font-color);
-}
-
-#terms a:hover{
-    text-decoration: underline;
-}
-
-footer p{
-    font-size: .875rem;
-    color: var(--footer-font-color);
-    text-align: start;
-    padding-left: .5rem;
-    /* position: absolute; */
-    width: 25rem;
-   height: 1rem;
-   margin: 0 0 9rem 0;
-   
-}
 
 
 
@@ -264,7 +28,7 @@ footer p{
 
 #jumping_arrow{
     position: absolute;
-    left: 61.6875rem;
+    left: 71.6875rem;
     top: 7.375rem;
     transform: translateY(1.875rem);
     animation: jump 5s infinite;
@@ -279,7 +43,7 @@ footer p{
 }
 #circle_icon_big{
     position: absolute;
-    left: 72.1875rem;
+    left: 82.1875rem;
     top: 26.5625rem;
     width: 5rem;
     height: 5rem;
@@ -324,7 +88,7 @@ footer p{
 #purple_blinking_circle{
         position: absolute;
     left: 9.3125rem;
-    top: 26.9375rem;
+    top: 30.9375rem;
     width: 5rem;
     height: 5rem;
     background-color: #fc15fc;
@@ -337,7 +101,7 @@ footer p{
 
 #yellow_blinking_circle{
       position: absolute;
-    left: 69.6875rem;
+    left: 89.6875rem;
     top: 10.375rem;
     width: 5rem;
     height: 5rem;
@@ -351,7 +115,7 @@ footer p{
 
 #up_arrow{
     position: absolute;
-    left: 58.875rem;
+    left: 72.875rem;
     top: 20.3125rem;
     
 }

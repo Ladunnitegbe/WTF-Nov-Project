@@ -1,0 +1,81 @@
+ <link rel="stylesheet" href="/WTF-Nov-Project/assets/CSS/global.css"> 
+ <link rel="stylesheet" href="/WTF-Nov-Project/assets/CSS/auth.css"> 
+ <link rel="stylesheet" href="/WTF-Nov-Project/Modules/signup/signup.css"> 
+ 
+ <main class="_container">
+        <section class="_container__header">
+            <img src="/WTF-Nov-Project/assets/images/login images/login image.svg" 
+            alt="Login icon image">
+
+            <h1 id="main_heading">Join TaskMaster</h1>
+
+            <h3 id="heading_text">Create an account to boost your productivity</h3>
+
+        </section>
+        
+        <section class="_container__form">
+            <form action="" id="form">
+
+                <div class="_container__form___buttons">
+                    <div class="_container__form___buttons____button" id="login">
+                        <a href="/WTF-Nov-Project/Modules/login/login.html">Login</a></div>
+                    <div class="_container__form___buttons____button" id="signup">Sign Up</div>
+                </div>
+                
+                <div class="_container__form___form_entry">
+                    <div class="_container__form___input_label">
+                        <label for="full_name">Full Name*</label>
+                        <input type="text" id="full_name" name="full_name" placeholder="John Doe">
+                        <img src="/WTF-Nov-Project/assets/images/login images/signup person icon.svg"
+                        alt="person icon">
+                        <p id="nameError" class="error-message"></p>
+                    </div>
+                    
+                    <div class="_container__form___input_label">
+                        <label for="email">Email Address*</label>
+                        <input type="email" id="email" name="email" placeholder="hello@example.com">
+                        <img src="/WTF-Nov-Project/assets/images/login images/login email icon.svg"
+                        alt="email icon">
+                        <p id="emailError" class="error-message"></p>
+                    </div>
+                    
+                    <div class="_container__form___input_label">
+                        <label for="password">Password*</label>
+                        <input type="password" id="password" name="password" placeholder="************">
+                        <img src="/WTF-Nov-Project/assets/images/login images/login padlock icon.svg"
+                        alt="person icon">
+                        <p id="passError" class="error-message"></p>
+                        <p id="password_paragraph">Password must be at least 6 characters long</p>
+                    </div>
+                </div>
+
+                <div class="_container__form___big_buttons">
+                    <button type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-question-mark h-4 w-4" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                        <!-- <img src="/WTF-Nov-Project/assets/images/login images/signup help icon.svg" 
+                        alt="help icon"> -->
+                        Help?</button>
+                    <button type="submit" class="gold_button" id="createAccount">Create Account</button>
+                </div>
+                
+
+                 <footer>
+            <p id="terms">By continuing, you agree to our 
+                <a href="#">Terms & Conditions</a> & <a href="#">Privacy Policy</a></p>
+            
+            <p>© 2024 TaskMaster | Made for University Students</p>
+        </footer>
+            </form>
+
+           
+        </section>
+
+        
+
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.15.15/validator.min.js"></script>
+    <script src="/WTF-Nov-Project/Modules/signup/signup.js"></script>
+    <!-- <script src="/WTF-Nov-Project/assets/JS/global.js"></script> -->
+    
