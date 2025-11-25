@@ -1,6 +1,5 @@
-@import url('/assests/css/reset.css');
 
-.sidenav-container {
+.side_nav_container {
     box-sizing: border-box;
     max-width: 16rem;
     max-height: 40rem;
@@ -15,15 +14,15 @@
     align-items: center;
 }
 
-.sidenav-brand {
+.side_nav_brand {
     justify-content: space-between;
     padding-bottom: 1rem;
     position: relative;
 
 }
 
-.sidenav-brand,
-.user-info {
+.side_nav_brand,
+.nav_card__user_info {
     padding: .75rem 1rem .9rem 1rem;
     border-bottom: 1px solid #EEF2FF;
 }
@@ -49,7 +48,7 @@
     color: black;
 }
 
-.btn {
+.side_nav__btn {
     width: 2rem;
     height: 2rem;
     border: none;
@@ -57,8 +56,8 @@
     border-radius: 6px;
 }
 
-.btn:hover,
-.btn:focus {
+.side_nav__btn:hover,
+.side_nav__btn:focus {
     background-color: #06B6D4;
 
 }

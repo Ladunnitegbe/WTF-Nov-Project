@@ -7,7 +7,7 @@ const signupPassword = document.querySelector('#password');
 const signupButton = document.querySelector('.gold_button');
 const signupName = document.querySelector('#full_name');
 const signupForm =document.getElementById('signupform');
-const logInTab = document.querySelector('#login')
+const logInTab = document.getElementById('login')
 
 signupForm.addEventListener('submit', (e)=>{
     e.preventDefault();

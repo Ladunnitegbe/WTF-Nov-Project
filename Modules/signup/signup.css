@@ -1,7 +1,7 @@
-@import url('global.css');
+@import url('/WTF-Nov-Project/assets/CSS/global.css');
 
 ._container{
-    height: 46.875rem;   /* login 618px */
+    height: 45.575rem;   /* login 618px */
 }
 
 ._container__form___buttons button a{
