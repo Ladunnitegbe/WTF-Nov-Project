@@ -16,7 +16,7 @@ let storedInfo = JSON.parse(localStorage.getItem('userInfo'));
 loginButton.addEventListener('click', (e)=>{
     e.preventDefault();
     if(loginEmail.value === storedInfo.Email && loginPassword.value === storedInfo.Password){
-      window.location.href ="/WTF-Nov-Project/Modules/dashboard/dashboard.html"
+      window.location.href ="/WTF-Nov-Project/main.html"
     } else {
         console.log ('please enter right information');
     }
