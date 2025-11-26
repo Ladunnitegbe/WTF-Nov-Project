@@ -15,38 +15,42 @@ signupForm.addEventListener('submit', (e)=>{
 
 let savedInfo;
 
-const nameValidator =  /^[a-zA-Z0-9_]{3,16}$/;
-const emailValidator = /^[a-zA-Z0-9][a-zA-Z0-9-_.]*@[a-zA-Z]+\.[A-Za-z]{2,}$/g;
-const passwordValidator = /[a-zA-Z0-9]{6,}/g; /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+const nameValidator = /^[A-Za-z]+( [A-Za-z]+)+$/;
+const emailValidator = /^[a-zA-Z0-9][a-zA-Z0-9._-]*@[a-zA-Z]+\.[A-Za-z]{2,}$/;
+const passwordValidator = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+
 
 signupButton.addEventListener('click', (e) => {
     e.preventDefault();
 
-    let nameTest = nameValidator.test(signupName.value);
-    let emailTest = emailValidator.test(signupEmail.value);
-    let passwordTest = passwordValidator.test(signupPassword.value);
+    let nameTest = nameValidator.test(signupName.value.trim());
+    let emailTest = emailValidator.test(signupEmail.value.trim());
+    let passwordTest = passwordValidator.test(signupPassword.value.trim());
 
     if (nameTest && emailTest && passwordTest) {
         console.log('proceed');
 
         savedInfo = {
-            Email: signupEmail.value,
-            Password: signupPassword.value,
-            Name: signupName.value
-
-        }
+            Email: signupEmail.value.trim(),
+            Password: signupPassword.value.trim(),
+            Name: signupName.value.trim()
+        };
 
         localStorage.setItem('userInfo', JSON.stringify(savedInfo));
-        signupButton.addEventListener('click',()=>{
-            window.location.href = "/WTF-Nov-Project/index.html";
-        })
+// go to login
+        window.location.href = "/WTF-Nov-Project/index.html";
+    }
 
-    } else if (emailTest && !passwordTest) {
+    else if(!nameTest && emailTest && passwordTest){
+
+     console.log('enter valid name');
+
+    } else if (nameTest && !emailTest && passwordTest) {
         console.log('enter valid email');
-    } else if (!emailTest && passwordTest) {
+    } else if (nameTest && emailTest && !passwordTest) {
         console.log('enter valid password');
     } else {
-        console.log('enter valid password and email');
+        console.log('enter valid name, password and email');
 
     }
 

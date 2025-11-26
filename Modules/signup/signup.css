@@ -4,6 +4,10 @@
     height: 45.575rem;   /* login 618px */
 }
 
+._container__form___form_entry{
+    margin-top: 1rem;
+}
+
 ._container__form___buttons button a{
     background-color: transparent;
 }

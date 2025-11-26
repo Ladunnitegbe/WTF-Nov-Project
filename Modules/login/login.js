@@ -2,7 +2,7 @@
 
 
 const loginEmail = document.querySelector('.login_email');
-const loginPassword = document.querySelector('.password');
+const loginPassword = document.querySelector('.login_password');
 const loginButton = document.querySelector('.nextStep');
 const loginForm = document.getElementById('loginform');
 
@@ -65,3 +65,4 @@ function loadScripts(element){
     }
 
 }
+
