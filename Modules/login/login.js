@@ -16,7 +16,7 @@ let storedInfo = JSON.parse(localStorage.getItem('userInfo'));
 loginButton.addEventListener('click', (e)=>{
     e.preventDefault();
     if(loginEmail.value === storedInfo.Email && loginPassword.value === storedInfo.Password){
-      window.location.href ="/WTF-Nov-Project/main.html"
+      window.location.href ="/main.html"
     } else {
         console.log ('please enter right information');
     }
@@ -31,7 +31,7 @@ const login = document.querySelector('.login-btn');
 signUpBtn.addEventListener('click', (e)=>{
    
     
-    const link = "/WTF-Nov-Project/Modules/signup/signup.html";
+    const link = "/Modules/signup/signup.html";
     
     fetch(link).then((res)=>{
 

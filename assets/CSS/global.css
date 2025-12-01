@@ -1,3 +1,5 @@
+@import url('reset.css');
+
 :root{
     --font-color: #101828;
     --main-font-color: #4a5565;
@@ -6,7 +8,7 @@
     --blue-font-color: #155dfc;
     --footer-font-color: #6a7282;
     --background-color: #FFFFFFCC;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, system-ui, sans-serif, "Inter",Arial, sans-serif;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-optical-sizing: auto;
     box-sizing: border-box;
     width: 100vw;

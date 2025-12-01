@@ -1,6 +1,7 @@
+@import url('/assets/CSS/global.css');
 .nav_card_container{
     box-sizing: border-box;
-    width: 13.9375rem;
+    max-width: 13.9375rem;
     height: 2.25rem;
     background-color: #eef2ff;
     border-radius: .375rem;
@@ -8,8 +9,24 @@
     transition: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
     justify-content: space-between;
     gap: 8px;
+    cursor: default;
+    transition: 0.3s;
     /* padding-top: .25rem; */
     
+}
+
+
+.nav_card_container:hover .nav_card_container__logos{
+    color: #ffffff;
+}
+
+
+.nav_card_container:hover .nav_card_container__headings{
+    color: #ffffff;
+}
+
+.nav_card_container .active{
+     color: #4f39f6;
 }
 
 .nav_card_container__logos{
@@ -21,14 +38,6 @@
      flex-shrink: 0;
 }
 
-.nav_card_container__logos:hover{
-    color: #ffffff;
-}
-
-.nav_card_container__logos:active{
-    color: #4f39f6;
-}
-
 .nav_card_container__headings{
     color: #000;
     margin: .5rem 7.375rem .5rem 0;
@@ -38,11 +47,6 @@
     /* margin: .5rem 7.375rem .5rem 2.5rem; */
 }
 
-.nav_card_container__headings:hover{
-    color: #ffffff;
-}
 
-.nav_card_container__headings:active{
-    color: #4f39f6;
-    font-size: .875rem;
-}
+
+   

@@ -59,3 +59,31 @@ for (e of logoutBotton) {
         window.location.href = "/auth.html";
     })
 }
+
+
+(function () {
+const me = document.currentScript;
+const container = me.parentElement;
+const wrapper = me.closest('[data-change-text]');
+const textElement = container.querySelector('.text');
+if (wrapper && textElement) {
+const newLabel = wrapper.getAttribute('data-change-text');
+if (newLabel) {
+textElement.innerHTML = newLabel;
+}
+}
+})();
+
+(function () {
+const me = document.currentScript;
+const container = me.parentElement;
+const wrapper = me.closest('[data-change-icon]');
+const textElement = container.querySelector('#symbol');
+if (wrapper && textElement) {
+const newLabel = wrapper.getAttribute('data-change-icon');
+if (newLabel) {
+textElement.innerHTML = newLabel;
+}
+}
+})();
+

@@ -1,3 +1,4 @@
+@import url('/assets/CSS/global.css');
 
 .side_nav_container {
     box-sizing: border-box;
@@ -5,8 +6,7 @@
     max-height: 40rem;
     background-color: white;
     border: 1px solid #EEF2FF;
-    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-
+    
 }
 
 ._flex {
@@ -22,27 +22,27 @@
 }
 
 .side_nav_brand,
-.nav_card__user_info {
+.side_nav__user_info {
     padding: .75rem 1rem .9rem 1rem;
     border-bottom: 1px solid #EEF2FF;
 }
 
-.sidenav-brand_all,
-.user-info {
+.side_nav_brand__all,
+.side_nav__user_info {
     gap: .75rem;
 }
 
-.sidenav-brand_logo {
-    width: 40px;
-    height: 40px;
+.side_nav_brand_logo {
+    width: 2.5rem;
+    height: 2.5rem;
     background-color: #4743F7;
-    border-radius: 8px;
+    border-radius: .5rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.sidenav-brand_title {
+.side_nav_brand__title {
     font-size: 1rem;
     font-weight: 700;
     color: black;
@@ -53,13 +53,12 @@
     height: 2rem;
     border: none;
     background-color: transparent;
-    border-radius: 6px;
+    border-radius: .375rem;
 }
 
 .side_nav__btn:hover,
 .side_nav__btn:focus {
     background-color: #06B6D4;
-
 }
 
 .hidebtn {
@@ -68,7 +67,7 @@
     display: none;
 }
 
-.first-letter {
+.side_nav__first-letter {
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
@@ -81,38 +80,38 @@
     justify-content: center;
 }
 
-.user-name {
+.side_nav__user_name {
     font-size: .875rem;
     font-weight: 500;
     color: black;
     margin-bottom: .5rem;
 }
 
-.user-email {
+.side_nav__user_email {
     font-size: .75rem;
     font-weight: 400;
 }
 
-.sidenav-container-tabs{
-    padding: 1.2rem 1rem 182px 1rem;
-    border-bottom: 1px solid #EEF2FF;
+.side_nav__tabs{
+    padding: 1.2rem 1rem 11.375rem 1rem;
+    border-bottom: .0625rem solid #EEF2FF;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: .5rem;
 }
 
-.current-tab{
+.side_nav__current-tab{
     padding: .5rem 0 .5rem .75rem;
     gap: .75rem;
-    border-radius: 6px;
+    border-radius: .375rem;
 }
 
-.tab-content {
+.side_nav__tab-content {
     font-size: .875rem;
     font-weight: 500;
 }
 
-.logout-container{
+.side_nav__logout-container{
     padding: 2rem 1.75rem;
     gap: .75rem;
 }

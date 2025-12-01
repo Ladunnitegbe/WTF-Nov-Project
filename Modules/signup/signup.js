@@ -38,7 +38,7 @@ signupButton.addEventListener('click', (e) => {
 
         localStorage.setItem('userInfo', JSON.stringify(savedInfo));
 // go to login
-        window.location.href = "/WTF-Nov-Project/index.html";
+        window.location.href = "/index.html";
     }
 
     else if(!nameTest && emailTest && passwordTest){
