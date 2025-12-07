@@ -11,6 +11,13 @@ const brand = document.querySelector('.side_nav_brand__all')
 const brandContainer = document.querySelector('.side_nav_brand  ');
 const logoutBotton = document.querySelectorAll('.logout');
 
+const taskPage = document.getElementById('tasks-page');
+const mainPage = document.querySelector('.main__contents');
+const dashPage = document.getElementById('dashboard-page');
+const communityPage = document.getElementById('community-page');
+
+
+
 let getinfo = JSON.parse(localStorage.getItem('userInfo'));
 
 userName.innerHTML = getinfo.Name;
@@ -23,9 +30,18 @@ showArrow.addEventListener('click', () => {
     for (let elem of tagContent) {
         elem.style.display = "none"
     }
-    sidenavContainer.style.width = "79px"
 
+    sidenavContainer.style.width = "79px";
+    dashboardExpand.classList.add('expand-all');
+    dashoardContainer.classList.add('container-expanded');
 
+    const taskPageExpand = document.querySelector('.tasks');
+    taskPageExpand.classList.add('expand-all');
+    taskPageExpand.classList.add('container-expanded');
+
+    const communityExpand = document.querySelector('.community');
+    communityExpand.classList.add('expand-all');
+    communityExpand.classList.add('container-expanded');
 
 })
 
@@ -37,6 +53,17 @@ hideArrow.addEventListener('click', () => {
         brand.style.display = "flex";
     }
 
+    sidenavContainer.style.width = "16rem";
+    dashboardExpand.classList.remove('expand-all');
+    dashoardContainer.classList.remove('container-expanded');
+
+    const taskPageExpand = document.querySelector('.tasks');
+    taskPageExpand.classList.remove('expand-all');
+    taskPageExpand.classList.remove('container-expanded');
+
+    const communityExpand = document.querySelector('.community');
+    communityExpand.classList.remove('expand-all');
+    communityExpand.classList.remove('container-expanded');
 })
 
 
@@ -56,10 +83,48 @@ for (let tab of currentTab) {
 
 for (e of logoutBotton) {
     e.addEventListener('click', () => {
-        window.location.href = "/index.html";
+        window.location.href = "/auth.html";
     })
 }
 
 
+dashPage.addEventListener('click', () => {
+    window.location.href = '/main.html';
+})
+
+taskPage.addEventListener('click', () => {
+
+    mainPage.classList.add('main-tasks__contents');
+
+    fetch('./module/tasks/tasks.html').then((res) => {
+        return res.text();
+    }).then((inside) => {
+        mainPage.innerHTML = inside;
+
+        const taskJs = document.createElement('script');
+        taskJs.src = '/module/tasks/tasks.js';
+        mainPage.appendChild(taskJs);
 
 
+    }).catch((err) => {
+        console.log("fail to fetch");
+    })
+
+})
+
+communityPage.addEventListener('click', () => {
+
+    fetch('./module/community/community.html').then((res) => {
+        return res.text();
+    }).then((inside) => {
+        mainPage.innerHTML = inside;
+
+        const communityJs = document.createElement('script');
+        communityJs.src = '/module/community/community.js';
+        mainPage.appendChild(communityJs);
+
+    }).catch((err) => {
+        console.log("fail to fetch");
+    })
+
+})
