@@ -1,14 +1,14 @@
 
-const userName = document.querySelector('.user-name');
-const userEmail = document.querySelector('.user-email');
-const firstLetter = document.querySelector('.first-letter');
+const userName = document.querySelector('.side_nav__user_name');
+const userEmail = document.querySelector('.side_nav__user_email');
+const firstLetter = document.querySelector('.side_nav__first-letter');
 const hideArrow = document.querySelector('.hidebtn');
 const showArrow = document.querySelector('.showbtn');
 const tagContent = document.querySelectorAll('.tab-content');
-const currentTab = document.querySelectorAll('.current-tab');
-const sidenavContainer = document.querySelector('.sidenav-container');
-const brand = document.querySelector('.sidenav-brand_all')
-const brandContainer = document.querySelector('.sidenav-brand');
+const currentTab = document.querySelectorAll('.side_nav__current-tab');
+const sidenavContainer = document.querySelector('.side_nav_container');
+const brand = document.querySelector('.side_nav_brand__all')
+const brandContainer = document.querySelector('.side_nav_brand  ');
 const logoutBotton = document.querySelectorAll('.logout');
 
 let getinfo = JSON.parse(localStorage.getItem('userInfo'));
@@ -56,34 +56,10 @@ for (let tab of currentTab) {
 
 for (e of logoutBotton) {
     e.addEventListener('click', () => {
-        window.location.href = "/auth.html";
+        window.location.href = "/index.html";
     })
 }
 
 
-(function () {
-const me = document.currentScript;
-const container = me.parentElement;
-const wrapper = me.closest('[data-change-text]');
-const textElement = container.querySelector('.text');
-if (wrapper && textElement) {
-const newLabel = wrapper.getAttribute('data-change-text');
-if (newLabel) {
-textElement.innerHTML = newLabel;
-}
-}
-})();
 
-(function () {
-const me = document.currentScript;
-const container = me.parentElement;
-const wrapper = me.closest('[data-change-icon]');
-const textElement = container.querySelector('#symbol');
-if (wrapper && textElement) {
-const newLabel = wrapper.getAttribute('data-change-icon');
-if (newLabel) {
-textElement.innerHTML = newLabel;
-}
-}
-})();
 

@@ -2,11 +2,11 @@
 
 .side_nav_container {
     box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: .0625rem solid #EEF2FF;
     max-width: 16rem;
     max-height: 40rem;
-    background-color: white;
-    border: 1px solid #EEF2FF;
-    
+    /* overflow-y: scroll; */
 }
 
 ._flex {
@@ -15,15 +15,15 @@
 }
 
 .side_nav_brand {
+    position: relative;
     justify-content: space-between;
     padding-bottom: 1rem;
-    position: relative;
 
 }
 
 .side_nav_brand,
 .side_nav__user_info {
-    padding: .75rem 1rem .9rem 1rem;
+    padding: .0625rem 1rem .9rem 1rem;
     border-bottom: 1px solid #EEF2FF;
 }
 
@@ -35,25 +35,26 @@
 .side_nav_brand_logo {
     width: 2.5rem;
     height: 2.5rem;
+    justify-content: center;
+    align-items: center;
     background-color: #4743F7;
     border-radius: .5rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 .side_nav_brand__title {
     font-size: 1rem;
     font-weight: 700;
-    color: black;
+    color: #000000;
 }
 
 .side_nav__btn {
     width: 2rem;
     height: 2rem;
-    border: none;
     background-color: transparent;
     border-radius: .375rem;
+    border: none;
 }
 
 .side_nav__btn:hover,
@@ -70,20 +71,20 @@
 .side_nav__first-letter {
     width: 2.5rem;
     height: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
     background-color: #374FF9;
     color: white;
     font-size: 1rem;
     font-weight: 600;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .side_nav__user_name {
     font-size: .875rem;
     font-weight: 500;
-    color: black;
+    color: #000000;
     margin-bottom: .5rem;
 }
 
@@ -106,19 +107,41 @@
     border-radius: .375rem;
 }
 
-.side_nav__tab-content {
+/* .side_nav__tab-content {
     font-size: .875rem;
     font-weight: 500;
-}
+} */
 
 .side_nav__logout-container{
-    padding: 2rem 1.75rem;
+    padding: 1rem 1.75rem;
     gap: .75rem;
 }
 
 #logout {
     font-size: .875rem;
     font-weight: 500;
-    color: red;
-    
+    color: #FF0000;
+}
+
+.side_nav__current-tab a{
+    text-decoration: none;
+    color: #000000;
+    font-size: .875rem;
+    font-weight: 500;
+}
+
+.side_nav__current-tab a:hover, .side_nav__current-tab a.focus {
+    color: #fff;    
+}
+
+/* expand */
+.expand-all {
+    transform: scaleX(1.17); 
+    transform-origin: left;
+}
+
+.container-expanded {
+    margin-left: -11rem;
+    width: 100%;
+    overflow: hidden;
 }
