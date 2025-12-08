@@ -86,3 +86,52 @@
 .card_six {
     grid-column: 3/5;
 }
+
+/* recent task template */
+.user-recent_task,
+.recent-task_info,
+.recent-task_level {
+    display: flex;
+    align-items: center;
+}
+
+.user-recent_task {
+    justify-content: space-between;
+}
+
+.user-Recent {
+    width: 28.375rem;
+    border: 1px solid #EEF2FF;
+    padding: .8125rem;
+    box-sizing: border-box;
+    border-radius: .5rem;
+
+}
+
+.recent-task_title {
+    font-size: .875rem;
+    color: #101828;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+.recent-task_date {
+    font-size: .75rem;
+    color: #6A7282;
+    font-weight: 400;
+}
+
+.recent-task_level {
+    border: 1px solid #D08700;
+    border-radius: 8px;
+    width: 62px;
+    height: 26px;
+    color: #D08700;
+    font-size: .75rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.recent-task_info {
+    gap: .75rem;
+}

@@ -1,3 +1,5 @@
+
+
 const title = document.querySelector('.dashboard_title');
 const changeContent = document.querySelectorAll('.change_content');
 const cardOneAmount = document.querySelector('.task_card___amount_num');
@@ -7,7 +9,9 @@ const cardFiveContent = document.querySelector('.card_five_p');
 const recentLoaded = document.querySelector('.dashboard_recent_template');
 
 let getTitle = JSON.parse(localStorage.getItem('userInfo'));
-title.innerHTML = `Good evening, ${getTitle.Name}!`;
+if (getTitle && getTitle.Name) {
+    title.innerHTML = `Good evening, ${getTitle.Name}!`;
+}
 
 let statContent = JSON.parse(localStorage.getItem('stats')) || { active: 0, completed: 0 };
 cardOneAmount.textContent = statContent.active;
@@ -19,13 +23,13 @@ let createdTasks = JSON.parse(localStorage.getItem('tasks')) || [];
 const card = [
     { title: "Total Expenses", image: "/Components/task_card/task_images/dollar sign.svg", Alt: 'dollar icon', amount: "$0.0", comment: "This period" },
     { title: "Total Notes", image: "/Components/task_card/task_images/file sign.svg", Alt: 'file icon', amount: "0", comment: "Saved Notes" },
-    { title: "Complection Rate", image: "/Components/task_card/task_images/progress-arrow icon.svg", Alt: 'progress arrow icon', amount: "0%", comment: "Task Complection" },
+    { title: "Completion Rate", image: "/Components/task_card/task_images/progress-arrow icon.svg", Alt: 'progress arrow icon', amount: "0%", comment: "Task Completion" },
 ];
 
 
 changeContent.forEach((ele, i) => {
     const cardTitle = ele.querySelector('.task_card___content_title');
-    const cardImage = ele.querySelector('.task_card___img_container');
+    const cardImage = ele.querySelector('.task_card___img_container img');
     const cardAmount = ele.querySelector('.task_card___amount_num');
     const cardComment = ele.querySelector('.task_card___amount_comment');
 
@@ -35,9 +39,12 @@ changeContent.forEach((ele, i) => {
     cardAmount.textContent = card[i].amount;
     cardComment.textContent = card[i].comment;
 
-    if (ele === changeContent[changeContent.length - 1]) {
-        cardAmount.textContent = Math.floor((statContent.completed / (statContent.active + statContent.completed)) * 100) + "%"|| 0;
-    }
+  if (i === changeContent.length - 1) {
+    let total = statContent.active + statContent.completed;
+    let rate = total === 0 ? 0 : Math.floor((statContent.completed / total) * 100);
+    cardAmount.textContent = rate + "%";
+}
+
 });
 
 if (createdTasks.length > 0) {
