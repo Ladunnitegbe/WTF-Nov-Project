@@ -58,5 +58,5 @@ signupButton.addEventListener('click', (e) => {
 });
 
 logInTab.addEventListener('click',()=>{
-    window.location.reload();
-})
+    window.location.href = "/index.html";
+});
