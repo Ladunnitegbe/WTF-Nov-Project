@@ -12,6 +12,14 @@
     display: flex;
 }
 
+.community_header {
+    gap: 12px;
+    align-items: center;
+    padding: 1.5625rem;
+    border-bottom: 1px solid #EEF2FF;
+    background-color: #F9FAFB;
+}
+
 .community_header_img {
     background-color: #4F39F6;
     border-radius: .5rem;
@@ -22,34 +30,27 @@
     align-items: center;
 }
 
-.community_header {
-    gap: 12px;
-    align-items: center;
-    padding: 1.5625rem;
-    border-bottom: 1px solid #EEF2FF;
-    background-color: #F9FAFB;
-}
 
-.community-header_info h2 {
+.community_header_info h2 {
     font-size: 1.125rem;
     color: #1E293B;
     font-weight: 600;
     margin-bottom: 8px;
 }
 
-.community-header_info p {
+.community_header_info p {
     color: #6A7282;
     font-size: .875rem;
     font-weight: 400;
 }
 
-.community-posts {
+.community_posts {
     padding: 25px;
     background-color: white;
 }
 
-.community-posts-AI,
-.reply-ai-section,
+.community_posts_ai,
+.reply_ai_section,
 #nochat-box {
     width: 61.1875rem;
     min-height: 9rem;
@@ -57,25 +58,25 @@
     box-sizing: border-box;
 }
 
-.community-posts-AI,
-.reply-ai-section {
+.community_posts_ai,
+.reply_ai_section {
     border: 1px solid #EEF2FF;
     padding: 1rem;
 }
 
-.reply-ai-section {
+.reply_ai_section {
     min-height: 5.875rem;
     display: none;
 }
 
-.reply-ai-contents {
+.reply_ai_contents {
     gap: 12px;
     align-items: center;
     font-size: 1rem;
     color: #1E293B;
 }
 
-.community-AI_letter {
+.community_ai_letter {
     width: 2.5rem;
     height: 40px;
     border-radius: 50%;
@@ -87,11 +88,11 @@
     justify-content: center;
 }
 
-.community-post-inputs {
+.community_post_inputs {
     gap: .75rem;
 }
 
-.community-post-inputs input {
+.community_post_inputs input {
     border-radius: 6px;
     width: 55.9375rem;
     min-height: 4rem;
@@ -102,12 +103,12 @@
     margin-bottom: .5rem;
 }
 
-.community-post-inputs input:focus {
+.community_post_inputs input:focus {
     border: 4px solid #9DC0FA;
     outline: none;
 }
 
-.community-post-btn {
+.community_post_btn {
     width: 4.8125rem;
     height: 2rem;
     border-radius: 6px;

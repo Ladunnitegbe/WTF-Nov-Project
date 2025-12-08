@@ -1,8 +1,8 @@
 
-const communityUserLetter = document.querySelectorAll('.community-AI_letter');
-const postButtom = document.querySelector('.community-post-btn');
+const communityUserLetter = document.querySelectorAll('.community_ai_letter');
+const postButton = document.querySelector('.community_post_btn');
 const userQuestion = document.getElementById('community_ask-ai');
-const aiAnswer = document.querySelector('.community-ai_answer');
+const aiAnswer = document.querySelector('.community_ai_answer');
 
 let getFirstLetter = JSON.parse(localStorage.getItem('userInfo'));
 communityUserLetter.forEach((name)=>{
@@ -14,8 +14,8 @@ let questions = {question: userQuestion.value};
 userQuestion.addEventListener('input', ()=>{
     
    if(userQuestion.value.length > 0){
-        postButtom.style.backgroundColor = "#4E8EF6";
+        postButton.style.backgroundColor = "#4E8EF6";
     } else {
-        postButtom.style.backgroundColor = "#9DC0FA";
+        postButton.style.backgroundColor = "#9DC0FA";
     }
 })
