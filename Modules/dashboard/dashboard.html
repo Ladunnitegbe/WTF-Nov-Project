@@ -1,33 +1,33 @@
 
-<link href="/assests/css/reset.css" rel="stylesheet">
-<link href="/module/dashboard/dashboard.css" rel="stylesheet">
-<script src="/module/dashboard/dashboard.js" defer></script>
-<script src="/assests/js/global.js" defer></script>
+<link href="/assets/CSS/reset.css" rel="stylesheet">
+<link href="/Modules/dashboard/dashboard.css" rel="stylesheet">
+<script src="/Modules/dashboard/dashboard.js" defer></script>
+<script src="/assets/JS/global.js" defer></script>
 
-<div class="dashoard-container">
-    <h1 class="dashboard-title"></h1>
-    <p class="dashboard-about">Here's what's happening with your productivity today</p>
+<div class="dashboard_container">
+    <h1 class="dashboard__title"></h1>
+    <p class="dashboard__about">Here's what's happening with your productivity today</p>
 
-    <div class="_grid dashboard-content">
-        <div data-import="/components/card/card.html" class="card-one"></div>
-        <div data-import="/components/card/card.html" class="card-two change-content"></div>
-        <div data-import="/components/card/card.html" class="card-three change-content"></div>
-        <div data-import="/components/card/card.html" class="card-four change-content"></div>
+    <div class="_grid dashboard__content">
+        <div data-import="/Components/task_card/task_card.html" class="card_one"></div>
+        <div data-import="/Components/task_card/task_card.html" class="card_two change_content"></div>
+        <div data-import="/Components/task_card/task_card.html" class="card_three change_content"></div>
+        <div data-import="/Components/task_card/task_card.html" class="card_four change_content"></div>
 
-        <div class="card-five">
+        <div class="card_five">
 
             <div class="flex">
-                <img src="/module/dashboard/images/clock.svg" alt="clock icon">
-                <p class="card-five-title">Recent Tasks</p>
+                <img src="/Modules/dashboard/dashboard images/clock icon.svg" alt="clock icon">
+                <p class="card_five_title">Recent Tasks</p>
             </div>
-            <img src="/module/dashboard/images/grey-tick.svg" class="card-five-image">
-            <p class="card-five-p">No tasks yet</p>
+            <img src="/Modules/dashboard/dashboard images/tasks icon.svg" alt="task icon" class="card_five_image">
+            <p class="card_five_p">No tasks yet</p>
 
-            <div class="user-recent-template"></div>
+            <div class="dashboard_recent_template"></div>
 
         </div>
 
-        <div data-import="/module/actionCard/actionCard.html" class="card-six"></div>
+        <div data-import="/Modules/quick_actions_card/quick_actions.html" class="card_six"></div>
 
     </div>
 
@@ -37,7 +37,7 @@
     <div class="user-Recent">
         <div class="user-recent_task">
             <div class="recent-task_info">
-                <img src="/module/tasks/image/not-done.svg" alt="grey circle icon">
+                <img src="/Modules/tasks/tasks images/not-done.svg" alt="grey circle icon">
                 <div class="recent-task_header">
                     <p class="recent-task_title"></p>
                     <p class="recent-task_date"></p>

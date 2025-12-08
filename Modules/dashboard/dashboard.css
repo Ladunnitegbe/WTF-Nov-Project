@@ -1,25 +1,25 @@
 
-.dashoard-container {
+.dashboard_container {
     box-sizing: border-box;
     max-width: 69.375rem;
     padding: 2rem;
 }
 
-.dashboard-title {
+.dashboard_title {
     font-size: 1.875rem;
     font-weight: 700;
     margin-bottom: .25rem;
     color: black;
 }
 
-.dashboard-about {
+.dashboard_about {
     font-size: 1rem;
     font-weight: 400;
     color: #697282;
     margin-bottom: 33px;
 }
 
-.card-five{
+.card_five{
     box-sizing: border-box;
     max-width: 31.5rem;
     border: 1px solid #EEF2FF;
@@ -28,19 +28,19 @@
     background-color: white;
 }
 
-.card-five-title {
+.card_five_title {
     color: #1E293B;
     font-size: 1rem;
     font-weight: 400;
 }
 
-.card-five-image{
+.card_five_image{
     display: block;
     margin: 0 auto;
     margin-bottom: 1.125rem;
 }
 
-.card-five-p {
+.card_five_p {
     text-align: center;
     color: #6A7282;
     font-size: .875rem;
@@ -61,27 +61,27 @@
     align-items: flex-start;
 }
 
-.card-one {
+.card_one {
     grid-column: 1/2;
 }
 
-.card-two {
+.card_two {
     grid-column: 2/3;
 }
 
-.card-three {
+.card_three {
     grid-column: 3/4;
 }
 
-.card-four{
+.card_four{
     grid-column: 4/5;
 }
 
-.card-five {
+.card_five {
     grid-column: 1/3;
    
 }
 
-.card-six {
+.card_six {
     grid-column: 3/5;
 }
