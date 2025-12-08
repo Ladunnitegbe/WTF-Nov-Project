@@ -1,4 +1,5 @@
 @import url(/assets/CSS/global.css);
+@import url(/assets/CSS/reset.css);
 
 .dashboard_container {
     box-sizing: border-box;

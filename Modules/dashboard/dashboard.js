@@ -1,6 +1,6 @@
 
 
-const title = document.querySelector('.dashboard_title');
+const title = document.querySelector('.dashboard__title');
 const changeContent = document.querySelectorAll('.change_content');
 const cardOneAmount = document.querySelector('.task_card___amount_num');
 const cardOneCompleted = document.querySelector('.task_card___amount_comment');
@@ -9,9 +9,7 @@ const cardFiveContent = document.querySelector('.card_five_p');
 const recentLoaded = document.querySelector('.dashboard_recent_template');
 
 let getTitle = JSON.parse(localStorage.getItem('userInfo'));
-
     title.innerHTML = `Good evening, ${getTitle.Name}!`;
-
 
 let statContent = JSON.parse(localStorage.getItem('stats')) || { active: 0, completed: 0 };
 cardOneAmount.textContent = statContent.active;
