@@ -38,7 +38,7 @@ signupButton.addEventListener('click', (e) => {
 
         localStorage.setItem('userInfo', JSON.stringify(savedInfo));
 // go to login
-        window.location.href = "/main.html";
+        window.location.href = "/index.html";
     }
 
     else if(!nameTest && emailTest && passwordTest){
@@ -57,45 +57,6 @@ signupButton.addEventListener('click', (e) => {
     
 });
 
-// logInTab.addEventListener('click',()=>{
-//     window.location.reload();
-
-
-loginTab.addEventListener('click', (e)=>{
-   
-    
-    const link = "/Modules/login/login.html";
-    
-    fetch(link).then((res)=>{
-
-        return res.text();
-
-    }).then((component)=>{
-       removableImport.remove();
-        replacable.innerHTML = component;
-        loadScripts(replacable);
-
-
-        
-    }).catch(()=>{
-        replacable.innerHTML= '<h2>There are nothing in the page<h2>';
-    });
-});
-
-function loadScripts(element){
-    const scripts = element.querySelectorAll("script");
-    for (let script of scripts) {
-        const newScript = document.createElement('script');
-        if(script.src){
-            newScript.src = script.src;
-        }
-        if(script.textContent){
-            newScript.textContent = script.textContent;
-        }
-        script.remove()
-        
-        document.body.appendChild(newScript)
-    }
-
-}
-
+logInTab.addEventListener('click',()=>{
+    window.location.reload();
+})
