@@ -1,5 +1,5 @@
 const title = document.querySelector('.dashboard_title');
-const changeContent = document.querySelectorAll('.change_ content');
+const changeContent = document.querySelectorAll('.change_content');
 const cardOneAmount = document.querySelector('.task_card___amount_num');
 const cardOneCompleted = document.querySelector('.task_card___amount_comment');
 const cardFiveImge = document.querySelector('.card_five_image');

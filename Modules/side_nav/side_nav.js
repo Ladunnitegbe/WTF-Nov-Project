@@ -96,13 +96,13 @@ taskPage.addEventListener('click', () => {
 
     mainPage.classList.add('main-tasks__contents');
 
-    fetch('./module/tasks/tasks.html').then((res) => {
+    fetch('./Modules/tasks/tasks.html').then((res) => {
         return res.text();
     }).then((inside) => {
         mainPage.innerHTML = inside;
 
         const taskJs = document.createElement('script');
-        taskJs.src = '/module/tasks/tasks.js';
+        taskJs.src = '/Modules/tasks/tasks.js';
         mainPage.appendChild(taskJs);
 
 
@@ -114,13 +114,13 @@ taskPage.addEventListener('click', () => {
 
 communityPage.addEventListener('click', () => {
 
-    fetch('./module/community/community.html').then((res) => {
+    fetch('./Modules/community/community.html').then((res) => {
         return res.text();
     }).then((inside) => {
         mainPage.innerHTML = inside;
 
         const communityJs = document.createElement('script');
-        communityJs.src = '/module/community/community.js';
+        communityJs.src = '/Modules/community/community.js';
         mainPage.appendChild(communityJs);
 
     }).catch((err) => {
