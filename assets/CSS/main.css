@@ -2,12 +2,13 @@
 
 .main {  
     max-width: 1365px;
+    height: 100vh;
     background-color: #F8F9FA;
     display: flex;
-    height: 720px;
+    box-sizing: border-box;
+    max-height: 720px;
     align-items: self-start;
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-
 }
 
 .main__sidenav {
@@ -20,4 +21,8 @@
     max-width: 69.375rem;
     margin-left: 16rem;
     width: 100%;
+}
+
+.main-tasks__contents{
+    padding: 2rem;
 }

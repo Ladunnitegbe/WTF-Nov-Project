@@ -83,7 +83,7 @@ for (let tab of currentTab) {
 
 for (e of logoutBotton) {
     e.addEventListener('click', () => {
-        window.location.href = "/auth.html";
+        window.location.href = "/index.html";
     })
 }
 

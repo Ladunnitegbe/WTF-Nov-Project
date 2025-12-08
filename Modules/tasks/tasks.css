@@ -1,0 +1,474 @@
+
+.tasks {
+    box-sizing: border-box;
+    border: 1px solid #EEF2FF;
+    border-radius: 8px;
+    width: 65.375rem;
+    box-shadow: 2px 2px 2px #dfdada, -2px 2px 2px #dfdada;
+    position: relative;
+}
+
+.tasks-header_info h2 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.tasks-header_info p,
+.tasks-state_active p,
+.tasks-state_complete p {
+    font-size: .875rem;
+    color: #6A7282;
+    font-weight: 400;
+}
+
+.tasks-header_image {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #155DFC;
+    border-radius: .5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+._tasks-flex {
+    display: flex;
+}
+
+.tasks-header {
+    gap: 12px;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #F9FAFB;
+    border-bottom: 1px solid #EEF2FF;
+}
+
+.tasks-contents {
+    background-color: white;
+    padding: 3.125rem 1.5rem 1.5rem 1.5rem;
+}
+
+.tasks-contents-tabs,
+.AI-summary-tabs {
+    background-color: #F3F4F6;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.tasks-contents-tabs {
+    width: 15.4375rem;
+    height: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.tasks-tab_tasks,
+.tasks-tab_progress {
+    gap: 8px;
+    font-size: .875rem;
+    font-weight: 500;
+    width: 7.375rem;
+    height: 31px;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+}
+
+.tasks-tab_tasks {
+    background-color: white;
+}
+
+.tasks-state_active::after {
+    content: "";
+    width: 1px;
+    height: 28px;
+    background: #C6D2FF;
+    position: absolute;
+    left: 98px;
+    top: 8px;
+}
+
+.tasks-state_active span,
+.tasks-state_complete span {
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 1.4375rem;
+}
+
+.tasks-state_complete span {
+    color: #00A63E;
+}
+
+.tasks-state {
+    justify-content: space-between;
+    position: relative;
+}
+
+.tasks-button {
+    position: relative;
+    left: 35%;
+}
+
+.tasks-state_content {
+    gap: 1.6rem;
+    margin-bottom: 1.5625rem;
+}
+
+.tasks-contents-list,
+.AI-summary-list {
+    background-color: #F5F7FD;
+    border-radius: .75rem;
+    text-align: center;
+}
+
+.tasks-contents-list {
+    padding: 2rem 0 1.5rem 0;
+    width: 62rem;
+    border: 2px dashed #C6D2FF;
+}
+
+.tasks-contents-list img {
+    margin-bottom: 1rem;
+}
+
+.tasks-contents-list p {
+    color: #64748B;
+    font-weight: 400;
+}
+
+.tasks-list_info {
+    font-size: 1rem;
+    margin-bottom: .875rem;
+}
+
+.tasks-list_instruction,
+.AI-list_instruction {
+    font-size: .875rem;
+    font-weight: 400;
+}
+
+.tasks-buttom_add {
+    border-radius: .5rem;
+    background-color: #5379e9;
+    width: 6.5625rem;
+    height: 2.25rem;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: .875rem;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.tasks-buttom_add:hover {
+    background-color: #1447E6;
+}
+
+/* AI summary template */
+
+.AI-header_title {
+    font-size: 1.125rem;
+    color: #1E293B;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.AI-header_info {
+    font-size: .875rem;
+    font-weight: 400;
+    color: #6A7282;
+}
+
+.AI-summary-headers {
+    margin-bottom: 1.5rem;
+    justify-content: space-between;
+}
+
+.generate-new-btn {
+    width: 138px;
+    height: 33px;
+    border-radius: .5rem;
+    border: none;
+    background-color: #9DC0FA;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.generate-new-btn span {
+    color: white;
+    font-weight: 600;
+    font-size: .875rem;
+}
+
+.AI-summary-tabs {
+    width: 17.5625rem;
+    height: 2.5rem;
+    margin-bottom: 1.5625rem;
+}
+
+.AI-summary_history,
+.AI-summary_lastest {
+    border-radius: 6px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.AI-summary_lastest {
+    width: 152px;
+    height: 31px;
+    background-color: white;
+}
+
+.AI-summary_history {
+    width: 117px;
+    height: 31px;
+}
+
+.AI-summary-list {
+    width: 61.1875rem;
+    height: 13rem;
+    border: 1px dashed #C6D2FF;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #6A7282;
+}
+
+.AI-summary-list img {
+    margin-bottom: 1.5rem;
+}
+
+.AI-list_info {
+    margin-bottom: .5rem;
+    font-size: 1.125rem;
+}
+
+/* Add button content */
+
+#add-box {
+    width: 32rem;
+    height: 26rem;
+    padding: 1.5625rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 2px solid #EEF2FF;
+    box-sizing: border-box;
+    position: absolute;
+    right: 30%;
+    top: -150px;
+    z-index: 200;
+}
+
+.close-box-img {
+    position: absolute;
+    right: 1.5625rem;
+    top: .9375rem;
+}
+
+.add-box-header {
+    gap: .5rem;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+
+.add-box_title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1E293B;
+}
+
+.add-box-info {
+    font-size: .875rem;
+    font-weight: 400;
+    color: #64748B;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    font-size: .875rem;
+    font-family: 500;
+    margin-bottom: .5rem;
+}
+
+.add-task_title input,
+.add-task_description input {
+    border-radius: 6px;
+    padding-left: 14px;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+input:focus {
+    border: 4px solid #9DC0FA;
+    outline: none;
+}
+
+.add-task_align {
+    gap: 4px;
+}
+
+.add-task_title input {
+    width: 25.75rem;
+    height: 2.25rem;
+}
+
+.add-title-btn {
+    align-self: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #EEF2FF;
+    border-radius: 5px;
+}
+
+.add-task_description input {
+    width: 28.875rem;
+    height: 4rem;
+}
+
+.add-task_options label,
+.add-task_date label {
+    font-size: .875rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+
+.add-task_options select,
+.add-task_date input {
+    width: 13.9375rem;
+    height: 2.25rem;
+    border-radius: 6px;
+    border: none;
+    padding: 0 10px;
+}
+
+.add-task_options option {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.add-task_options select:focus {
+    border: 1px solid blue;
+}
+
+.add-task_priorites {
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+#cancel-btn,
+#create-btn {
+
+    font-weight: 500;
+    font-size: .875rem;
+    border-radius: 6px;
+}
+
+#cancel-btn {
+    width: 4.75rem;
+    height: 2.4rem;
+    padding: 3px 0;
+    background-color: #dce2e9;
+    border: 1px solid #EEF2FF;
+    color: black;
+}
+
+#cancel-btn:hover,
+#cancel-btn:focus {
+    background-color: #06b6d4;
+    color: white;
+}
+
+#create-btn {
+    width: 6.5rem;
+    height: 2.25rem;
+    background-color: #4d8df6;
+    border: none;
+    color: white;
+}
+
+.add-tasks_buttoms {
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.main-color_overlay {
+    background-color: #7C7D7D;
+    background-blend-mode: overlay;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+/* User Added Task */
+#user-added {
+    width: 996px;
+    border-radius: 12px;
+    padding: 1rem;
+    border: 1px solid #EEF2FF;
+    background-color: white;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.user-added_header {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.user-added_description {
+    font-size: .875rem;
+    color: #4A5565;
+    font-weight: 400;
+    margin-bottom: .75rem;
+}
+
+.user-chosen_info {
+    margin-left: 2rem;
+}
+
+.user-chosen_difficulty {
+    width: 3.8125rem;
+    height: 20px;
+    font-size: .75rem;
+    color: white;
+    font-weight: 500;
+    background-color: #FE9A00;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.user-chosen_date {
+    font-size: .75rem;
+    font-weight: 400;
+    color: #6A7282;
+}
+
+.user-added-contents {
+    justify-content: space-between;
+}
+
+.delete-btn {
+    width: 2.25rem;
+    height: 2rem;
+    border: none;
+    background-color: transparent;
+    border-radius: 6px;
+    position: absolute;
+    right: 1rem;
+    top: 1.125rem;
+}
+
+.user-added-contents {
+    margin-bottom: .75rem;
+    gap: .75rem;
+}
+
+.user-added_main {
+    gap: .75rem;
+}

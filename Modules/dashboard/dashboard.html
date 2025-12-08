@@ -23,6 +23,8 @@
             <img src="/module/dashboard/images/grey-tick.svg" class="card-five-image">
             <p class="card-five-p">No tasks yet</p>
 
+            <div class="user-recent-template"></div>
+
         </div>
 
         <div data-import="/module/actionCard/actionCard.html" class="card-six"></div>
@@ -30,3 +32,20 @@
     </div>
 
 </div>
+
+<template id="tasks-template">
+    <div class="user-Recent">
+        <div class="user-recent_task">
+            <div class="recent-task_info">
+                <img src="/module/tasks/image/not-done.svg" alt="grey circle icon">
+                <div class="recent-task_header">
+                    <p class="recent-task_title"></p>
+                    <p class="recent-task_date"></p>
+                </div>
+            </div>
+
+            <div class="recent-task_level"></div>
+        </div>
+    </div>
+
+</template>

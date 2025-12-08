@@ -1,0 +1,141 @@
+.community {
+    box-sizing: border-box;
+    border: 1px solid #EEF2FF;
+    background-color: white;
+    border-radius: 8px;
+    width: 64.4375rem;
+    box-shadow: 2px 2px 2px #dfdada, -2px 2px 2px #dfdada;
+    margin: 2rem 0 2rem .5rem
+}
+
+.community_flex {
+    display: flex;
+}
+
+.community-header_img {
+    background-color: #4F39F6;
+    border-radius: .5rem;
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.community-header {
+    gap: 12px;
+    align-items: center;
+    padding: 1.5625rem;
+    border-bottom: 1px solid #EEF2FF;
+    background-color: #F9FAFB;
+}
+
+.community-header_info h2 {
+    font-size: 1.125rem;
+    color: #1E293B;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.community-header_info p {
+    color: #6A7282;
+    font-size: .875rem;
+    font-weight: 400;
+}
+
+.community-posts {
+    padding: 25px;
+    background-color: white;
+}
+
+.community-posts-AI,
+.reply-ai-section,
+#nochat-box {
+    width: 61.1875rem;
+    min-height: 9rem;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.community-posts-AI,
+.reply-ai-section {
+    border: 1px solid #EEF2FF;
+    padding: 1rem;
+}
+
+.reply-ai-section {
+    min-height: 5.875rem;
+    display: none;
+}
+
+.reply-ai-contents {
+    gap: 12px;
+    align-items: center;
+    font-size: 1rem;
+    color: #1E293B;
+}
+
+.community-AI_letter {
+    width: 2.5rem;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #2B7FFF;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+}
+
+.community-post-inputs {
+    gap: .75rem;
+}
+
+.community-post-inputs input {
+    border-radius: 6px;
+    width: 55.9375rem;
+    min-height: 4rem;
+    border: 1px solid #e6e7ec;
+    padding-left: 1rem;
+    color: #1E293B;
+    font-size: .875rem;
+    margin-bottom: .5rem;
+}
+
+.community-post-inputs input:focus {
+    border: 4px solid #9DC0FA;
+    outline: none;
+}
+
+.community-post-btn {
+    width: 4.8125rem;
+    height: 2rem;
+    border-radius: 6px;
+    border: none;
+    font-size: .875rem;
+    font-weight: 600;
+    color: white;
+    background: #9DC0FA;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+}
+
+#nochat-box {
+    border: 1px dashed #EEF2FF;
+    text-align: center;
+    margin: 0 auto 1.5625rem auto;
+    padding-top: 2rem;
+    background-color: #F9FAFB;
+
+}
+
+#nochat-box img {
+    margin-bottom: 1.25rem;
+}
+
+#nochat-box p {
+    font-size: 1rem;
+    color: #6A7282;
+    font-weight: 400;
+}
