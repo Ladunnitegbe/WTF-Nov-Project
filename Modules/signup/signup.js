@@ -38,7 +38,7 @@ signupButton.addEventListener('click', (e) => {
 
         localStorage.setItem('userInfo', JSON.stringify(savedInfo));
 // go to login
-        window.location.href = "/index.html";
+        window.location.href = "/main.html";
     }
 
     else if(!nameTest && emailTest && passwordTest){
